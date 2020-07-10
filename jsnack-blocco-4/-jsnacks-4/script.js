@@ -3,17 +3,17 @@
 
 var num1 = prompt('inserisci una parola');
 var num2 = prompt('inserisci una parola');
-var num3;
 
-function varLength(x,y,z) {
-    if (x.length > y.length) {
-        var z = x;
-    } else if (y.length > x.length) {
-        var z = y;
+function varLength(x,y) {
+    var lng1 = x.length;
+    var lng2 = y.length;
+    if (lng1 === lng2) {
+        console.log('sono uguali');
+    } else if (lng1 > lng2) {
+        console.log('longest is ', x );
     } else {
-        var z = x + ' ' + y;
-    }
-    return z;
+        console.log('longest is ', y );
+    };
 }
 
-console.log(varLength(num1,num2,num3));
+console.log(varLength(num1,num2));
