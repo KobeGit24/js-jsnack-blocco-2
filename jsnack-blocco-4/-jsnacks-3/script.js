@@ -2,8 +2,8 @@
 
 function snack2(array,min,max) {
     var arrayNew = [];
-    if (max>array.length) {
-        max = array.length;
+    if (max>=array.length) {
+        max = array.length-1;
     }
 
     for (var i = min; i <= max; i++) {
